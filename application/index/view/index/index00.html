@@ -1,0 +1,52 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf8">
+    <style>
+/*    .a{
+text-decoration:none;
+}*/
+		.c1{
+            width:100%;
+            height:100%;
+            text-align:center;
+
+        }
+		.c2{
+            width:85%;
+            height:7%;
+            text-align:center;
+			margin-top:15%;
+			margin-left:7%;
+			font-size:35px;
+        }
+		.c3{
+            width:85%;
+            height:15%;
+            text-align:center;
+			margin-left:7%;
+			font-size:37px;
+        }
+        img{
+        	margin-top:10%;
+            width:42%;
+            height:27%;
+        }
+
+    </style>
+</head>
+<script type="text/javascript">
+var mobileAgent = new Array("iphone", "ipod", "ipad", "android", "mobile", "blackberry", "webos", "incognito", "webmate", "bada", "nokia", "lg", "ucweb", "skyfire");
+var browser = navigator.userAgent.toLowerCase();
+var isMobile = false;
+for (var i=0; i<mobileAgent.length; i++){ if (browser.indexOf(mobileAgent[i])!=-1){ isMobile = true;
+//alert(mobileAgent[i]);
+location.href = '{:url('index/mobile')}';
+break; } }
+</script>
+<body>
+<div class="c1">
+    <a href="{:url('index/upload')}"><img style="width:350px;height:350px;" src="__INDEX__/images/mobilelogo.png" alt=""/></a>
+    <div class="c2"><a href="{:url('index/upload')}" style='text-decoration:none;'><h2>Android版 平行时空1.5下载</h2></a></div>
+</div>
+</body>
+</html>
